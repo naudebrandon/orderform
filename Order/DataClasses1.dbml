@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Order_DB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Order_DB.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="Order.Properties.Settings" SettingsPropertyName="Order_DBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblUsers" Member="tblUsers">
+    <Type Name="tblUser">
+      <Column Name="UserID" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPrinterIP" Member="tblPrinterIPs">
+    <Type Name="tblPrinterIP">
+      <Column Name="IPID" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IP_Address" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
